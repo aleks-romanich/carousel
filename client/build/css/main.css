@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Nixie+One|Tangerine");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, main, nav, section {
+  display: block; }
+
+body {
+  font-family: 'Tangerine', cursive;
+  line-height: 1;
+  font-size: 100%; }
+
+a {
+  text-decoration: none; }
+
+input,
+textarea {
+  resize: none;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+ul li {
+  list-style: none; }
+
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Tangerine', cursive;
+  font-family: 'Nixie One', cursive; }
+
+.caption {
+  text-align: center;
+  font-size: 2em;
+  color: #555;
+  margin: 100px; }
+
+.slider {
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto;
+  background: #888;
+  overflow: hidden; }
+
+.slide {
+  display: block;
+  width: 99999px;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out; }
+  .slide__item {
+    display: block;
+    float: left; }
+  .slide__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    opacity: 1; }
+
+.arrows {
+  position: relative;
+  z-index: 100;
+  height: 300px; }
+  .arrows:hover .block-arrows, .arrows:hover .arrows__left, .arrows:hover .arrows__right {
+    opacity: 1; }
+  .arrows:hover .slide__img {
+    opacity: 0; }
+  .arrows__left {
+    left: 0; }
+  .arrows__right {
+    right: 0; }
+
+.block-arrows, .arrows__left, .arrows__right {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  font-size: 2.5em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 1px 2px #000, 0 0 1em #999;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 7px #333;
+  box-shadow: 0 0 7px #333;
+  padding-bottom: 5px;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 0.2s;
+  transition: opacity ease-out 0.2s; }
