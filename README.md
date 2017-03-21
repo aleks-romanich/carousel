@@ -1,2 +1,5 @@
 # gulp-sass-browserSync
-test task
+
+carousel
+
+https://aleks-romanich.github.io/carousel/
